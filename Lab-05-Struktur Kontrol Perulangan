@@ -1,0 +1,39 @@
+#Zhivaldo Fabio H.
+#71200608
+
+'''
+Tabel Perkalian anak SD
+
+Input = Memasukkan angka perkalian berapa
+
+Process = Menghitung dan Looping
+
+Output = Tabel Perkalian 1 - 10
+'''
+
+
+import time
+
+angka = int(input("Masukkan angka yang mau dikalikkan : "))
+
+def perkalianUp():
+
+    for hitung in range (1, 11):
+        hasil = angka * hitung
+        print (angka, "x", hitung, "=", hasil)
+        time.sleep(0.2)
+
+        
+
+def perkalianDown():
+
+    number = 10
+    while number >= 1:
+        huasil = angka * number
+        print (angka, "x", number, "=", huasil)
+        number -= 1
+        time.sleep(0.2)
+
+perkalianUp()
+print ("="*10)
+perkalianDown()
